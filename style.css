@@ -171,11 +171,11 @@ body{
     margin: 15px 0;
 }
 
-.quiz-box .answer-indicator{
+.quiz-box .answers-indicator{
     border-top: 1px solid #cccccc;
 }
 
-.quiz-box .answer-indicator div{
+.quiz-box .answers-indicator div{
     height: 40px;
     width: 40px;
     display: inline-block;
@@ -183,6 +183,22 @@ body{
     border-radius: 50%;
     margin-right: 3px;
     margin-top: 10px;
+}
+
+.quiz-box .answers-indicator div.correct{
+    background-color: green;
+    background-image: url(correct.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.quiz-box .answers-indicator div.wrong{
+    background-color: red;
+    background-image: url(wrong.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Result box */
