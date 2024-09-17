@@ -23,6 +23,18 @@ body{
     margin: 40px auto;
     padding: 30px;
     border-radius: 10px;
+    animation: fadeInRight 1s ease;
+}
+
+@keyframes fadeInRight{
+    0%{
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 .custom-box::before,

@@ -28,7 +28,7 @@ function setAvailableQuestion(){
 // set question number and number and options
 function getNewQuestion(){
     //set Question number
-    questionNumber.innerHTML = "Question" + (questionCounter + 1) + "of" + quiz.length;
+    questionNumber.innerHTML = " Question " + (questionCounter + 1) + " of " + quiz.length;
 
     //set question text
     //get random question
@@ -153,7 +153,36 @@ function quizResult(){
     resultBox.querySelector(".total-score").innerHTML = correctAnswers + " / " + quiz.length;
 }
 
-window.onload = function(){
+function resetQuiz(){
+    questionCounter = 0;
+    correctAnswers = 0;
+    attempt = 0;
+}
+
+function tryAgainQuiz(){
+    // hide the resultBox
+    resultBox.classList.add("hide");
+    // show the quizBox
+    quizBox.classList.remove("hide");
+    resetQuiz();
+    startQuiz();
+}
+
+function goToHome(){
+    // hide result Box
+    resultBox.classList.add("hide");
+    // show home box
+    homeBox.classList.remove("hide");
+    resetQuiz();
+}
+
+function  startQuiz(){
+
+    // hide home box
+    homeBox.classList.add("hide");
+    // show quiz box
+    quizBox.classList.remove("hide");
+
     setAvailableQuestion();
     getNewQuestion();
     // to create indicator of answer
