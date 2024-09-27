@@ -12,7 +12,7 @@ body{
     font-size: 16px;
     font-weight: 400;
     outline: none;
-    background-color: #009688;
+    background-color: tomato;
 }
 
 /* Home box */
@@ -74,7 +74,7 @@ body{
 
 .btn{
     padding: 15px 45px;
-    background-color: #009688;
+    background-color: tomato;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -96,11 +96,11 @@ body{
 }
 
 .quiz-box .question-number{
-    font-style: 18px;
-    color: #009688;
+    font-style: 20px;
+    color: tomato;
     font-weight: 600;
     border-bottom: 1px solid #cccccc;
-    padding-bottom: 10px;
+    padding: 10px 0 10px 0;
     line-height: 25px;
 }
 
@@ -149,7 +149,7 @@ body{
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: green;
+    background-color: rgb(22, 187, 22);
     z-index: -1;
     animation: slideInLeft .5s ease forwards;
 }
@@ -170,7 +170,7 @@ body{
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: red;
+    background-color: rgb(252, 70, 70);
     z-index: -1;
     animation: slideInLeft .5s ease forwards;
 }
@@ -226,7 +226,7 @@ body{
 .result-box h1{
     font-size: 36px;
     line-height: 42px;
-    color: #009688;
+    color: tomato;
 }
 
 .result-box table{
